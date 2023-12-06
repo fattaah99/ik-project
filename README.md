@@ -42,19 +42,19 @@ Repository for cloud computing
 
 * Response:
   * If successful:
-  * Status Code: 200
-  * JSON Response:
-    ```json
-    {
-      "error": false,
-      "loginResult": {
-        "email": "muhammadfattah@gmail.com",
-        "fullname": "Muhammad Fattah Al Rasyidin",
-        "token": "<access_token>",
-        "userid": 1
-      },
-      "message": "Login Success"
-    }
+    * Status Code: 200
+    * JSON Response:
+     ```json
+     {
+       "error": false,
+       "loginResult": {
+         "email": "muhammadfattah@gmail.com",
+         "fullname": "Muhammad Fattah Al Rasyidin",
+         "token": "<access_token>",
+         "userid": 1
+       },
+       "message": "Login Success"
+     }
   * If email or password is incorrect:
     * Status Code: 200
     * JSON Response:
@@ -64,4 +64,241 @@ Repository for cloud computing
         "message": "Wrong Password or Account not found"
       }
 
- 
+
+## Traditional Building
+### Get All Traditional Building
+* Endpoint: /api/traditional_building
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+* Response:
+  * If successful:
+    * Status Code: 200
+    * JSON Response:
+      ```json
+      [
+       {
+         "id": 1,
+         "name": "Traditional Building 1",
+         "categories": "Traditional Building",
+         "rate": "4.6",
+         "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+       },
+       {
+         "id": 2,
+         "name": "Traditional Building 2",
+         "categories": "Traditional Building",
+         "rate": "4.6",
+         "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+       }
+      ]
+
+### Get Traditional Building By ID
+* Endpoint: /api/traditional_building/<traditional_building_id>
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+  * Response:
+    * If product exists:
+      * Status Code: 200
+      * JSON Response:
+        ```json
+        {
+          "error": false,
+          "product": {
+            "id": 1,
+            "name": "Traditional Building 1",
+            "categories": "Traditional Building",
+             "rate": "4.6",
+             "price": "20000",
+            "description": " Traditional Building 1 description",
+            "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+          }
+        }
+    * If not found:
+      * Status Code: 200
+      * JSON Response:
+        ```json
+        {
+          "error": true,
+          "message": " Traditional Building not found"
+        }
+
+## Local Culinary
+### Get All Local Culinary
+* Endpoint: /api/local_culinary
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+  * Response:
+    * If successful:
+    * Status Code: 200
+    * JSON Response:
+      ```json
+      [
+        {
+          "id": 1,
+          "name": " Local Culinary 1",
+          "categories": "local culinary ",
+          "rate": "4.6",
+          "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Local Culinary 2",
+          "categories": " local culinary ",
+          "rate": "4.6",
+          "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+        }
+      ]
+
+### Get Local Culinary By ID
+* Endpoint: /api/ local_culinary/< local_culinary_id>
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+* Response:
+  * If product exists:
+    * Status Code: 200
+    * JSON Response:
+      ```json
+      {
+        "error": false,
+        "product": {
+          "id": 1,
+          "name": "Local Culinary 1",
+          "categories": " local culinary ",
+           "rate": "4.6",
+           "price": "20000",
+          "description": " local culinary 1 description",
+          "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+        }
+      }
+    * If not found:
+      * Status Code: 200
+      * JSON Response:
+        ```json
+        {
+          "error": true,
+          "message": " local culinary not found"
+        }
+
+### Myth
+#### Get All Myth
+* Endpoint: /api/myth
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+* Response:
+  * If successful:
+    * Status Code: 200
+    * JSON Response:
+      ```json
+      [
+        {
+          "id": 1,
+          "name": " myth 1",
+          "categories": "myth ",
+          "rate": "4.6",
+          "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Myth 2",
+          "categories": myth ",
+          "rate": "4.6",
+          "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+        }
+      ]
+
+
+#### Get Myth By ID
+* Endpoint: /api/ myth/< myth_id>
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+* Response:
+  * If product exists:
+    * Status Code: 200
+    * JSON Response:
+      ```json
+      {
+        "error": false,
+        "product": {
+          "id": 1,
+          "name": "Myth 1",
+          "categories": " myth ",
+           "rate": "4.6",
+          "description": " myth 1 description",
+          "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+        }
+      }
+ * If not found:
+   * Status Code: 200
+   * JSON Response:
+     ```json
+     {
+       "error": true,
+       "message": " myth not found"
+     }
+
+
+### Local Stories
+#### Get All Local Stories
+* Endpoint: /api/local_stories
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+* Response:
+* If successful:
+  * Status Code: 200
+  * JSON Response:
+    ```json
+    [
+      {
+        "id": 1,
+        "name": " Local Stories 1",
+        "categories": "local stories ",
+        "rate": "4.6",
+        "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+      },
+      {
+        "id": 2,
+        "name": "" Local Stories 2",
+        "categories": " local stories ",
+        "rate": "4.6",
+        "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+      }
+    ]
+
+
+### Get Local Stories By ID
+#### Endpoint: /api/ local_stories/< local_stories_id>
+* Method: GET
+* Request Headers:
+  * Authorization: Bearer <access_token>
+  * Response:
+    * If product exists:
+     * Status Code: 200
+     * JSON Response:
+       ```json
+       {
+         "error": false,
+         "product": {
+           "id": 1,
+           "name": "Local Stories 1",
+           "categories": " local stories ",
+            "rate": "4.6",
+           "description": " local stories 1 description",
+           "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
+         }
+       }
+    * If not found:
+      * Status Code: 200
+      * JSON Response:
+        ```json
+        {
+          "error": true,
+          "message": " local stories not found"
+        }
+
