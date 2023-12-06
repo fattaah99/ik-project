@@ -65,8 +65,8 @@ Repository for cloud computing
       }
 
 
-## Traditional Building
-### Get All Traditional Building
+### Traditional Building
+#### Get All Traditional Building
 * Endpoint: /api/traditional_building
 * Method: GET
 * Request Headers:
@@ -93,7 +93,7 @@ Repository for cloud computing
        }
       ]
 
-### Get Traditional Building By ID
+#### Get Traditional Building By ID
 * Endpoint: /api/traditional_building/<traditional_building_id>
 * Method: GET
 * Request Headers:
@@ -124,8 +124,8 @@ Repository for cloud computing
           "message": " Traditional Building not found"
         }
 
-## Local Culinary
-### Get All Local Culinary
+### Local Culinary
+#### Get All Local Culinary
 * Endpoint: /api/local_culinary
 * Method: GET
 * Request Headers:
@@ -152,7 +152,7 @@ Repository for cloud computing
         }
       ]
 
-### Get Local Culinary By ID
+#### Get Local Culinary By ID
 * Endpoint: /api/ local_culinary/< local_culinary_id>
 * Method: GET
 * Request Headers:
