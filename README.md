@@ -3,6 +3,26 @@
 # Culturama Backend Documentation
 Repository for cloud computing
 
+## Database Schema Culturama
+### Tabel User
+| Column     | Data Type | Constraints         |
+|----------|------|--------------|
+| id_user     | INT   | PRIMARY KEY, AUTO_INCREMENT      |
+| nama | VARCHAR(255)   | NOT NULL      |
+| email      | VARCHAR(255)   | NOT NULL     |
+| password      | VARCHAR(255)   | NOT NULL     |
+
+### Tabel Content
+| Column     | Data Type | Constraints         |
+|----------|------|--------------|
+| id_destination     | INT   | PRIMARY KEY, AUTO_INCREMENT      |
+| title_dest | VARCHAR(255)   | NOT NULL      |
+| categories      | VARCHAR(255)   | NOT NULL     |
+| rating      | INT   | NOT NULL     |
+| image     | VARCHAR(255)  |  NOT NULL  |
+|  price    |  INT        |   NOT NULL    |
+|  content    |  TEXT        |   NOT NULL    |
+
 ## Culturama API Documentation
 ### Authentication
 #### Register
