@@ -205,7 +205,7 @@ Repository for cloud computing
         {
           "id": 2,
           "name": "Myth 2",
-          "categories": myth ",
+          "categories": "myth ",
           "rate": "4.6",
           "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
         }
@@ -264,7 +264,7 @@ Repository for cloud computing
         },
         {
           "id": 2,
-          "name": "" Local Stories 2",
+          "name": "Local Stories 2",
           "categories": " local stories ",
           "rate": "4.6",
           "img_url": "https://storage.googleapis.com/bucket_name/image_folder/image_filename.jpg"
